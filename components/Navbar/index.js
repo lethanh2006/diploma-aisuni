@@ -431,7 +431,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               </svg>
 
               <a
-                href="https://ptit.edu.vn"
+                href="https://daotao.ptit.edu.vn"
                 target="_blank"
                 rel="noreferrer"
                 style={{
