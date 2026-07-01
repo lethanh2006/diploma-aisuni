@@ -43,7 +43,7 @@ dist
 .next
 bower_components
 package-lock.json
-yarn.lock
+# yarn.lock
 # Editors
 .idea
 .vscode
