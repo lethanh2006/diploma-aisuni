@@ -15,8 +15,10 @@ import VanBangTable from "components/Table/TableXetTuyen";
 import {TitleUnderWrapper} from "components/DoiNguCanBo/TinTuc.style";
 import moment from "moment";
 import {ip} from "data/ip";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const VBChungChi = (props) => {
+  const { t } = useTranslation();
   const {secTitleWrapper, secText, secHeading, dataBlock} = props;
   const isValue = (val) => {
     // check xem nếu bị undefined, null, xâu rỗng -> false
@@ -31,16 +33,15 @@ const VBChungChi = (props) => {
   const traCuu = async ({hoTen, ngaySinh, cmtCccd}) => {
     if (!isValue(hoTen) && !isValue(ngaySinh) && !isValue(cmtCccd)) {
       Modal.warning({
-        title: "Thông báo",
-        content: "Chưa nhập thông tin tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_query_info"),
       });
       return;
     }
     if (isValue(hoTen) && isValue(ngaySinh) && isValue(cmtCccd)) {
       Modal.warning({
-        title: "Thông báo",
-        content:
-          "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo cccd/cmt",
+        title: t("index.messages.warning"),
+        content: t("index.messages.search_name_dob_or_cccd_cmt"),
         onOk() {},
       });
       return;
@@ -50,9 +51,8 @@ const VBChungChi = (props) => {
       (isValue(cmtCccd) && isValue(hoTen))
     ) {
       Modal.warning({
-        title: "Thông báo",
-        content:
-          "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo cccd/cmt",
+        title: t("index.messages.warning"),
+        content: t("index.messages.search_name_dob_or_cccd_cmt"),
       });
       return;
     }
@@ -71,8 +71,8 @@ const VBChungChi = (props) => {
     const arr = data?.data?.data ?? [];
     if (arr.length === 0) {
       Modal.error({
-        title: "Thông báo",
-        content: "Không tìm thấy kết quả tuyển sinh",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_admission_found"),
         onOk() {},
       });
       setloading(false);

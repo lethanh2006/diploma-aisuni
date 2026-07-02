@@ -14,8 +14,10 @@ import SectionWrapper from "../styles/vanbangchungchi.style";
 import { TitleUnderWrapper } from "components/DoiNguCanBo/TinTuc.style";
 import VanBangTable from "components/Table/VanBang";
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const VBChungChi = (props) => {
+  const { t } = useTranslation();
   const { secTitleWrapper, secText, secHeading, dataBlock } = props;
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isValue = (val) => {
@@ -30,8 +32,8 @@ const VBChungChi = (props) => {
   const traCuu = async ({ hoDem, ten, cmtCccd, testDate, dateOfBirth }) => {
     if (!isValue(hoDem) && !isValue(ten) && !isValue(cmtCccd) && !isValue(testDate) && !isValue(dateOfBirth)) {
       Modal.warning({
-        title: "Thông báo",
-        content: "Chưa nhập thông tin tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_query_info"),
       });
       return;
     }
@@ -44,8 +46,8 @@ const VBChungChi = (props) => {
       isValue(testDate)
     ) {
       Modal.warning({
-        title: "Thông báo",
-        content: "Chỉ tiềm kiếm 1 trong 2 cách",
+        title: t("index.messages.warning"),
+        content: t("index.messages.search_one_way"),
         onOk() {},
       });
       return;
@@ -54,8 +56,8 @@ const VBChungChi = (props) => {
       (!isValue(cmtCccd) && !isValue(testDate))
     ) {
       Modal.error({
-        title: "Thông báo",
-        content: "Phải nhập đầy đủ thông tin",
+        title: t("index.messages.warning"),
+        content: t("index.messages.fill_all_info"),
         onOk() {},
       });
       return;
@@ -72,8 +74,8 @@ const VBChungChi = (props) => {
     const arr = data?.data?.data ?? [];
     if (arr.length === 0) {
       Modal.error({
-        title: "Thông báo",
-        content: "Thông tin nhập sai hoặc không tồn tại thông tin kết quả thi",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_exam_info"),
         onOk() {},
       });
       setloading(false);

@@ -5,6 +5,7 @@ import _ from "lodash";
 import PropTypes from "prop-types";
 import React from "react";
 import TraCuuVanBangChungChi from "./tracuuvbcc";
+import { useTranslation } from "components/Utils/useTranslation";
 
 
 const VBChungChi = ({
@@ -15,6 +16,7 @@ const VBChungChi = ({
   dataToeic,
   dataNhapHoc,
 }) => {
+  const { t } = useTranslation();
   return (
     <Row>
       <TraCuuVanBangChungChi
@@ -42,7 +44,7 @@ const VBChungChi = ({
                 color: "#BC2626",
               }}
             >
-              Bạn muốn tra cứu văn bằng chứng chỉ gì?
+              {t("index.question")}
             </div>
 
             <div
@@ -54,7 +56,7 @@ const VBChungChi = ({
                 color: "#051A53",
               }}
             >
-              Vui lòng nhập thông tin để tra cứu
+              {t("index.prompt")}
             </div>
           </div>
         }

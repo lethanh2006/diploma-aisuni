@@ -14,8 +14,10 @@ import { HeadingWrapper } from "../components/Table/Heading.style";
 // import { VBCC } from '../components/Data';
 import VanBangTable from "components/Table/VanBang";
 import { TitleUnderWrapper } from "components/DoiNguCanBo/TinTuc.style";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const VBChungChi = ({ secTitleWrapper, secText, secHeading }) => {
+  const { t } = useTranslation();
   const isValue = (val) => {
     // check xem nếu bị undefined, null, xâu rỗng -> false
     if (!val && val !== 0) return false; // undefined, null
@@ -33,8 +35,8 @@ const VBChungChi = ({ secTitleWrapper, secText, secHeading }) => {
       //   icon: <Icon type="close-circle" style={{ color: 'red' }} />,
       // });
       Modal.warning({
-        title: "Thông báo",
-        content: "Chưa nhập thông tin tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_query_info"),
       });
       return;
     }
@@ -45,9 +47,8 @@ const VBChungChi = ({ secTitleWrapper, secText, secHeading }) => {
       //   icon: <Icon type="close-circle" style={{ color: 'red' }} />,
       // });
       Modal.warning({
-        title: "Thông báo",
-        content:
-          "Chỉ tìm kiếm theo họ tên, ngày sinh hoặc theo số hiệu văn bằng",
+        title: t("index.messages.warning"),
+        content: t("index.messages.search_by_name_or_no"),
         onOk() {},
       });
       return;
@@ -61,8 +62,8 @@ const VBChungChi = ({ secTitleWrapper, secText, secHeading }) => {
       //   icon: <Icon type="close-circle" style={{ color: 'red' }} />,
       // });
       Modal.error({
-        title: "Thông báo",
-        content: "Phải nhập cả họ tên và ngày sinh",
+        title: t("index.messages.warning"),
+        content: t("index.messages.enter_name_and_dob"),
         onOk() {},
       });
       return;
@@ -75,8 +76,8 @@ const VBChungChi = ({ secTitleWrapper, secText, secHeading }) => {
     const arr = data?.data?.data ?? [];
     if (arr.length === 0) {
       Modal.error({
-        title: "Thông báo",
-        content: "Thông tin nhập sai hoặc không tồn tại văn bằng",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_diploma_found"),
         onOk() {},
       });
       setloading(false);

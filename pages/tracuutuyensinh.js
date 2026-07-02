@@ -16,8 +16,10 @@ import VanBangTable from "components/Table/TableXetTuyen";
 import {TitleUnderWrapper} from "components/DoiNguCanBo/TinTuc.style";
 import moment from "moment";
 import _ from "lodash";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const VBChungChi = (props) => {
+  const { t } = useTranslation();
   const {secTitleWrapper, secText, secHeading, dataBlock} = props;
   const isValue = (val) => {
     // check xem nếu bị undefined, null, xâu rỗng -> false
@@ -42,8 +44,8 @@ const VBChungChi = (props) => {
       !isValue(soBaoDanh)
     ) {
       Modal.warning({
-        title: "Thông báo",
-        content: "Chưa nhập thông tin tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_query_info"),
       });
       return;
     }
@@ -54,9 +56,8 @@ const VBChungChi = (props) => {
       isValue(soBaoDanh)
     ) {
       Modal.warning({
-        title: "Thông báo",
-        content:
-          "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo CCCD hoặc số báo danh",
+        title: t("index.messages.warning"),
+        content: t("index.messages.search_name_dob_or_cccd_sbd"),
         onOk() {},
       });
       return;
@@ -66,9 +67,8 @@ const VBChungChi = (props) => {
       (isValue(cmtCccd) && isValue(hoTen))
     ) {
       Modal.warning({
-        title: "Thông báo",
-        content:
-          "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo CCCD",
+        title: t("index.messages.warning"),
+        content: t("index.messages.search_name_dob_or_cccd"),
       });
       return;
     }
@@ -77,8 +77,8 @@ const VBChungChi = (props) => {
       (isValue(ngaySinh) && !isValue(hoTen))
     ) {
       Modal.warning({
-        title: "Thông báo",
-        content: "Vui lòng nhập họ tên và ngày sinh để tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.enter_name_and_dob_prompt"),
       });
       return;
     }
@@ -87,9 +87,7 @@ const VBChungChi = (props) => {
     if (cmtCccd) {
       path = `cmtCccd=${cmtCccd}`;
     }
-    if (soBaoDanh) {
-      path = `soBaoDanh=${soBaoDanh}`;
-    }
+    soBaoDanh && (path = `soBaoDanh=${soBaoDanh}`);
     if (ngaySinh && hoTen) {
       const ngaySinhNew = moment(ngaySinh).format("YYYY-MM-DD");
       const hoTenNew = hoTen.trim();
@@ -113,9 +111,8 @@ const VBChungChi = (props) => {
 
     if (arr?.length === 0) {
       Modal.error({
-        title: "Thông báo",
-        // content: "Hồ sơ không được tiếp nhận",
-        content: "Không tìm thấy thông tin tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_lookup_info_found"),
         onOk() {},
       });
       setloading(false);
