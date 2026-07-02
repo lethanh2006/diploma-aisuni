@@ -67,9 +67,15 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   });
 
   const languageMenu = (
-    <Menu onClick={({ key }) => changeLocale(key)}>
-      <Menu.Item key="vi-VN">Tiếng Việt</Menu.Item>
-      <Menu.Item key="en-US">English</Menu.Item>
+    <Menu onClick={({ key }) => changeLocale(key)} style={{ padding: "8px 0" }}>
+      <Menu.Item key="vi-VN" style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 16px" }}>
+        <img src="/assets/image/locales/vi-VN.svg" width={28} height={18} alt="vi" style={{ objectFit: "cover", borderRadius: "2px", boxShadow: "0 1px 3px rgba(0,0,0,0.15)" }} />
+        <span style={{ fontSize: "14px", color: "#333", fontWeight: "500" }}>Tiếng Việt (vi-VN)</span>
+      </Menu.Item>
+      <Menu.Item key="en-US" style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 16px" }}>
+        <img src="/assets/image/locales/en-US.svg" width={28} height={18} alt="en" style={{ objectFit: "cover", borderRadius: "2px", boxShadow: "0 1px 3px rgba(0,0,0,0.15)" }} />
+        <span style={{ fontSize: "14px", color: "#333", fontWeight: "500" }}>English (en-US)</span>
+      </Menu.Item>
     </Menu>
   );
 
@@ -314,9 +320,15 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             </div>
 
             <div style={{ display: "flex", alignItems: "center" }}>
-              <Dropdown overlay={languageMenu} trigger={["click"]}>
-                <a className="ant-dropdown-link" style={{ color: "white", display: "flex", alignItems: "center", gap: "4px", cursor: "pointer" }}>
-                  {locale === "vi-VN" ? "Tiếng Việt" : "English"} <Icon type="down" />
+              <Dropdown overlay={languageMenu} trigger={["hover", "click"]} placement="bottomCenter">
+                <a className="ant-dropdown-link" style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+                  <img
+                    src={`/assets/image/locales/${locale === "vi-VN" ? "vi-VN.svg" : "en-US.svg"}`}
+                    alt="lang"
+                    width={28}
+                    height={18}
+                    style={{ borderRadius: "2px", objectFit: "cover", boxShadow: "0 1px 3px rgba(0,0,0,0.15)" }}
+                  />
                 </a>
               </Dropdown>
             </div>
@@ -466,9 +478,15 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 fontSize: "clamp(10px, 2vw, 14px)",
               }}
             >
-              <Dropdown overlay={languageMenu} trigger={["click"]}>
-                <a className="ant-dropdown-link" style={{ color: "white", display: "flex", alignItems: "center", gap: "4px" }}>
-                  {locale === "vi-VN" ? "Tiếng Việt" : "English"} <Icon type="down" />
+              <Dropdown overlay={languageMenu} trigger={["hover", "click"]} placement="bottomCenter">
+                <a className="ant-dropdown-link" style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+                  <img
+                    src={`/assets/image/locales/${locale === "vi-VN" ? "vi-VN.svg" : "en-US.svg"}`}
+                    alt="lang"
+                    width={28}
+                    height={18}
+                    style={{ borderRadius: "2px", objectFit: "cover", boxShadow: "0 1px 3px rgba(0,0,0,0.15)" }}
+                  />
                 </a>
               </Dropdown>
             </div>
