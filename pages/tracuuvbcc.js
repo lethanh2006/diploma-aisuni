@@ -10,8 +10,10 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import SectionWrapper from "../styles/vanbangchungchi.style";
 import bgtracuu from "assets/image/bgtracuu.png";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const TraCuuVanBangChungChi = (props) => {
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const [ds, setds] = useState([]);
@@ -23,8 +25,8 @@ const TraCuuVanBangChungChi = (props) => {
 
     if (filledFields < 2) {
       Modal.warning({
-        title: "Thông báo",
-        content: "Vui lòng nhập ít nhất 2 thông tin để tra cứu",
+        title: t("index.messages.warning"),
+        content: t("index.messages.warning_2_fields"),
       });
       return;
     }
@@ -37,9 +39,8 @@ const TraCuuVanBangChungChi = (props) => {
     const arr = data?.data?.data?.result ?? [];
     if (arr.length === 0) {
       Modal.error({
-        title: "Thông báo",
-        content:
-          "Thông tin nhập sai hoặc không tồn tại thông tin văn bằng chứng chỉ",
+        title: t("index.messages.warning"),
+        content: t("index.messages.no_info_found"),
         onOk() { },
       });
       setloading(false);

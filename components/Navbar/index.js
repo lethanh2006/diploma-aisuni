@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-indent */
 /* eslint-disable indent */
 import { useRouter } from "next/router";
-import { Button, Col, Drawer, Icon, Menu, Row } from "antd";
+import { Button, Col, Drawer, Icon, Menu, Row, Dropdown } from "antd";
 // import { MENU_ITEMS_MOBILE } from 'common/src/data/Hosting/data';
 import LogoImage from "assets/image/hosting/ptit-logo.png";
 import axios from "axios";
@@ -18,6 +18,7 @@ import styled from "styled-components";
 import Container from "./ContainerMenu/index";
 import NavbarWrapper from "./Navbar";
 import { Image } from "./Navbar/navbar.style";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const { Item, SubMenu } = Menu;
 export const AWrapper = styled.a`
@@ -57,12 +58,20 @@ export function Format(str) {
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const router = useRouter();
+  const { t, locale, changeLocale } = useTranslation();
   const isDesktop = useMediaQuery({
     query: "(max-width: 768px)",
   });
   const isMobile = useMediaQuery({
     query: "(max-width: 500px)",
   });
+
+  const languageMenu = (
+    <Menu onClick={({ key }) => changeLocale(key)}>
+      <Menu.Item key="vi-VN">Tiếng Việt</Menu.Item>
+      <Menu.Item key="en-US">English</Menu.Item>
+    </Menu>
+  );
 
   const [daotao, setDaotao] = useState([]);
   const [loaitintuc, setLoaiTinTuc] = useState([]);
@@ -156,45 +165,45 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
 
   let MENU_ITEMS = [
     {
-      label: "TRANG CHỦ",
+      label: t("menu.home"),
       path: "#",
       offset: "70",
     },
     {
       hover: true,
-      label: "GIỚI THIỆU CHUNG",
+      label: t("menu.general_intro"),
       path: "#",
       offset: "70",
       submenu: [
         <Item>
           <Link href="/doinguchitiet">
-            <a style={{ fontSize: isDesktop ? 14 : 18 }}>Đội ngũ cán bộ</a>
+            <a style={{ fontSize: isDesktop ? 14 : 18 }}>{t("menu.staff")}</a>
           </Link>
         </Item>,
         <Item>
           <Link href="/chucnangnhiemvu">
             <a style={{ fontSize: isDesktop ? 14 : 18 }}>
-              Chức năng - Nhiệm vụ
+              {t("menu.functions")}
             </a>
           </Link>
         </Item>,
         <Item>
           <Link href="/quychequydinh">
-            <a style={{ fontSize: isDesktop ? 14 : 18 }}>Quy chế - Quy định</a>
+            <a style={{ fontSize: isDesktop ? 14 : 18 }}>{t("menu.regulations")}</a>
           </Link>
         </Item>,
       ],
     },
     {
-      label: "TIN TỨC",
+      label: t("menu.news"),
       path: "tintucchung",
     },
     {
-      label: "ĐỀ ÁN TUYỂN SINH",
+      label: t("menu.admission_plan"),
       path: "deantuyensinh",
     },
     {
-      label: "TUYỂN SINH",
+      label: t("menu.admission"),
       path: "https://tuyensinh.ptit.edu.vn/",
       offset: "70",
       redirect: true,
@@ -205,7 +214,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             style={{ fontSize: isDesktop ? 14 : 18 }}
             onClick={() => window.open("https://tuyensinh.ptit.edu.vn/")}
           >
-            Tin tức
+            {t("menu.admission_news")}
           </a>
 
           {/* </Link> */}
@@ -216,7 +225,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               style={{ fontSize: isDesktop ? 14 : 18 }}
               onClick={() => window.open("https://tuyensinh.ptit.edu.vn/")}
             >
-              Đề án tuyển sinh
+              {t("menu.admission_scheme")}
             </a>
           </Link>
         </Item>,
@@ -224,13 +233,13 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     },
     {
       hover: true,
-      label: "CHƯƠNG TRÌNH ĐÀO TẠO",
+      label: t("menu.training_program"),
       path: "#",
       offset: "70",
       submenu: daotaoDesk(),
     },
     {
-      label: "TRA CỨU",
+      label: t("menu.lookup"),
       path: "#",
       offset: "70",
       submenu: [
@@ -240,7 +249,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             style={{ fontSize: isDesktop ? 14 : 18 }}
             onClick={() => window.open("https://tracuuvanbang.ptit.edu.vn/")}
           >
-            Tra cứu văn bằng
+            {t("menu.lookup_diploma")}
           </a>
 
           {/* </Link> */}
@@ -248,14 +257,14 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
         <Item>
           <Link href="/chungchi">
             <a style={{ fontSize: isDesktop ? 14 : 18 }}>
-              Tra cứu chứng chỉ tiếng Anh
+              {t("menu.lookup_english")}
             </a>
           </Link>
         </Item>,
       ],
     },
     {
-      label: "BA CÔNG KHAI",
+      label: t("menu.three_publics"),
       path: "bacongkhai",
       offset: "70",
     },
@@ -300,13 +309,17 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                   whiteSpace: "nowrap",
                 }}
               >
-                Cổng thông tin điện tử PTIT
+                {t("footer.ptit_portal")}
               </a>
             </div>
 
-            {/* <div style={{ display: "flex", alignItems: "center" }}>
-              Tiếng Việt
-            </div> */}
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <Dropdown overlay={languageMenu} trigger={["click"]}>
+                <a className="ant-dropdown-link" style={{ color: "white", display: "flex", alignItems: "center", gap: "4px", cursor: "pointer" }}>
+                  {locale === "vi-VN" ? "Tiếng Việt" : "English"} <Icon type="down" />
+                </a>
+              </Dropdown>
+            </div>
           </div>
         </Container>
       </div>
@@ -376,7 +389,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                     lineHeight: 1.25,
                   }}
                 >
-                  Học viện Công nghệ Bưu chính Viễn thông
+                  {t("footer.academy_name")}
                 </div>
 
                 <div
@@ -389,7 +402,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                     lineHeight: 1.25,
                   }}
                 >
-                  HỆ THỐNG TRA CỨU VĂN BẰNG CHỨNG CHỈ
+                  {t("footer.system_title")}
                 </div>
               </div>
             </Col>
@@ -440,11 +453,11 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                   fontSize: "clamp(10px, 2vw, 14px)",
                 }}
               >
-                Cổng thông tin điện tử Học viện Công nghệ Bưu chính Viễn thông
+                {t("footer.ptit_portal_full")}
               </a>
             </div>
 
-            {/* <div
+            <div
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -453,20 +466,12 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 fontSize: "clamp(10px, 2vw, 14px)",
               }}
             >
-              Tiếng Việt
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </div> */}
+              <Dropdown overlay={languageMenu} trigger={["click"]}>
+                <a className="ant-dropdown-link" style={{ color: "white", display: "flex", alignItems: "center", gap: "4px" }}>
+                  {locale === "vi-VN" ? "Tiếng Việt" : "English"} <Icon type="down" />
+                </a>
+              </Dropdown>
+            </div>
           </div>
         </Container>
       </div>
@@ -519,7 +524,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                   marginBottom: "4px",
                 }}
               >
-                Học viện Công nghệ Bưu chính Viễn thông
+                {t("footer.academy_name")}
               </div>
 
               <div
@@ -530,7 +535,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                   textTransform: "uppercase",
                 }}
               >
-                HỆ THỐNG TRA CỨU VĂN BẰNG CHỨNG CHỈ
+                {t("footer.system_title")}
               </div>
             </div>
           </div>

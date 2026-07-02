@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import "./style.less";
 import { fontSize } from "styled-system";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const PDFViewerV2 = dynamic(
   () => import("../../components/PDFViewerV2/index.js"),
@@ -27,6 +28,7 @@ const renderField = (item) => {
 };
 
 const ChiTietVanBang = () => {
+  const { t } = useTranslation();
   const router = useRouter();
   const { idChiTiet } = router.query;
   const [record, setRecord] = useState({});
@@ -83,7 +85,7 @@ const ChiTietVanBang = () => {
                 gap: 12,
               }}
             >
-              <span>Chi tiết kết quả tra cứu</span>
+              <span>{t("detail.title")}</span>
 
               <svg
                 width="32"
@@ -127,7 +129,7 @@ const ChiTietVanBang = () => {
                 </svg>
 
                 <span style={{ fontSize: "20px" }}>
-                  Thông tin đã được xác thực
+                  {t("detail.verified")}
                 </span>
               </div>
             )}
@@ -138,7 +140,7 @@ const ChiTietVanBang = () => {
               <Col span={24}>
                 <div className="vbcc-info-card">
                   <div className="vbcc-info-title" style={{ fontSize: "20px" }}>
-                    Thông tin văn bằng
+                    {t("detail.diploma_info")}
                   </div>
                   <Descriptions
                     column={{ xs: 1, sm: 1, md: 2 }}
@@ -146,39 +148,39 @@ const ChiTietVanBang = () => {
                     size="middle"
                     className="vbcc-custom-descriptions"
                   >
-                    <Descriptions.Item label="Họ và tên">
+                    <Descriptions.Item label={t("detail.fullname")}>
                       {record?.hoTen ?? "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Mã sinh viên">
+                    <Descriptions.Item label={t("detail.student_id")}>
                       {record?.maSinhVien ?? "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Ngày sinh">
+                    <Descriptions.Item label={t("detail.dob")}>
                       {record?.ngaySinh
                         ? moment(record.ngaySinh).format("DD/MM/YYYY")
                         : "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Trình độ đào tạo">
+                    <Descriptions.Item label={t("detail.education_level")}>
                       {record?.thongTinTrinhDoDaoTao?.ten ??
                         record?.trinhDoDaoTao ??
                         "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Hình thức đào tạo">
+                    <Descriptions.Item label={t("detail.education_form")}>
                       {record?.thongTinHinhThucDaoTao?.ten ??
                         record?.hinhThucDaoTao ??
                         "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Ngành đào tạo">
+                    <Descriptions.Item label={t("detail.major")}>
                       {record?.thongTinNganhDaoTao?.ten ??
                         record?.nganhDaoTao ??
                         "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Số vào sổ">
+                    <Descriptions.Item label={t("detail.book_no")}>
                       {record?.soVaoSoBang ?? "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Số hiệu văn bằng">
+                    <Descriptions.Item label={t("detail.diploma_no")}>
                       {record?.soHieuVanBang ?? "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Số vào sổ (Tiếng Anh)">
+                    <Descriptions.Item label={t("detail.book_no_en")}>
                       {record?.bookEntryNumberFormat ?? "---"}
                     </Descriptions.Item>
                   </Descriptions>
@@ -188,7 +190,7 @@ const ChiTietVanBang = () => {
               <Col span={24}>
                 <div className="vbcc-info-card">
                   <div className="vbcc-info-title" style={{ fontSize: "20px" }}>
-                    Thông tin quyết định
+                    {t("detail.decision_info")}
                   </div>
                   <Descriptions
                     column={{ xs: 1, sm: 1, md: 2 }}
@@ -196,32 +198,19 @@ const ChiTietVanBang = () => {
                     size="middle"
                     className="vbcc-custom-descriptions"
                   >
-                    <Descriptions.Item label="Số quyết định">
+                    <Descriptions.Item label={t("detail.decision_no")}>
                       {record?.quyetDinh?.soQuyetDinh ?? "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Ngày ban hành">
+                    <Descriptions.Item label={t("detail.issue_date")}>
                       {record?.quyetDinh?.ngayBanHanh
                         ? moment(record.quyetDinh.ngayBanHanh).format(
                             "DD/MM/YYYY",
                           )
                         : "--"}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Nội dung trích yếu" span={2}>
+                    <Descriptions.Item label={t("detail.summary")} span={2}>
                       {record?.quyetDinh?.noiDung ?? "--"}
                     </Descriptions.Item>
-                    {/* <Descriptions.Item label="Tập tin đính kèm" span={2}>
-                      {record?.quyetDinh?.url ? (
-                        <a
-                          href={record.quyetDinh.url}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Xem chi tiết
-                        </a>
-                      ) : (
-                        "--"
-                      )}
-                    </Descriptions.Item> */}
                   </Descriptions>
                 </div>
               </Col>
@@ -253,7 +242,7 @@ const ChiTietVanBang = () => {
                             className="vbcc-info-title"
                             style={{ fontSize: "20px" }}
                           >
-                            Thông tin phụ lục
+                            {t("detail.appendix_info")}
                           </div>
                           <Descriptions
                             bordered
@@ -322,14 +311,14 @@ const ChiTietVanBang = () => {
 
               {!!record?.fileVanBang && (
                 <Col span={24}>
-                  <Divider orientation="left">Tệp tin văn bằng</Divider>
+                  <Divider orientation="left">{t("detail.diploma_file")}</Divider>
                   <PDFViewerV2 url={record.fileVanBang} height={"650px"} />
                 </Col>
               )}
 
               {record?.urlIpfs && (
                 <Col span={24}>
-                  <Divider orientation="left">Tệp tin IPFS</Divider>
+                  <Divider orientation="left">{t("detail.ipfs_file")}</Divider>
                   <PDFViewerV2 url={record.urlIpfs} height={"650px"} />
                 </Col>
               )}
@@ -339,7 +328,7 @@ const ChiTietVanBang = () => {
                   <div className="vbcc-signature">
                     <img src="/images/tick.svg" alt="" width={24} height={24} />
                     <span style={{ fontWeight: 600 }}>
-                      Thông tin văn bằng đã được ký số:
+                      {t("detail.signed_info")}
                     </span>
                     <a
                       href={`https://jwt.io/#debugger-io?token=${record.signature}`}
@@ -347,7 +336,7 @@ const ChiTietVanBang = () => {
                       className="text-primary"
                       rel="noreferrer"
                     >
-                      Kiểm tra chữ ký số (JWS)
+                      {t("detail.check_signature")}
                     </a>
                   </div>
                 </Col>
@@ -355,7 +344,7 @@ const ChiTietVanBang = () => {
             </Row>
           ) : (
             <Empty
-              description="Không tìm thấy thông tin phụ lục"
+              description={t("detail.no_appendix_error")}
               style={{ marginBottom: 32, marginTop: 32 }}
             />
           )}

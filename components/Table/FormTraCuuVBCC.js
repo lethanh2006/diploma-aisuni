@@ -12,6 +12,7 @@ import capbangdiemsohieu from "assets/image/sohieuvb.png";
 import moment from "moment";
 import React from "react";
 import { color } from "styled-system";
+import { useTranslation } from "components/Utils/useTranslation";
 
 const openNotification = () => {
   notification.error({
@@ -24,6 +25,7 @@ const openNotification = () => {
 };
 
 const FormTraCuuVBCC = (props) => {
+  const { t } = useTranslation();
   const { getFieldDecorator } = props.form;
 
   const handleSubmit = (e) => {
@@ -65,40 +67,40 @@ const FormTraCuuVBCC = (props) => {
             <Row gutter={[12, 2]}>
               <Col xs={24} md={8}>
                 <Form.Item
-                  label={<span style={{ fontSize: "15px" }}>Họ tên</span>}
+                  label={<span style={{ fontSize: "15px" }}>{t("index.form.fullname")}</span>}
                 >
                   {getFieldDecorator("hoTen")(
                     <Input
                       style={{ fontSize: "15px" }}
                       size="large"
-                      placeholder="Nhập họ tên"
+                      placeholder={t("index.form.enter_fullname")}
                     />,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24} md={8}>
                 <Form.Item
-                  label={<span style={{ fontSize: "15px" }}>Ngày sinh</span>}
+                  label={<span style={{ fontSize: "15px" }}>{t("index.form.dob")}</span>}
                 >
                   {getFieldDecorator("ngaySinh")(
                     <DatePicker
                       size="large"
                       style={{ width: "100%", fontSize: "15px" }}
                       format={"DD/MM/YYYY"}
-                      placeholder="Chọn ngày sinh"
+                      placeholder={t("index.form.select_dob")}
                     />,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24} md={8}>
                 <Form.Item
-                  label={<span style={{ fontSize: "15px" }}>CCCD</span>}
+                  label={<span style={{ fontSize: "15px" }}>{t("index.form.cccd")}</span>}
                 >
                   {getFieldDecorator("cccd")(
                     <Input
                       style={{ fontSize: "15px" }}
                       size="large"
-                      placeholder="Nhập CCCD"
+                      placeholder={t("index.form.enter_cccd")}
                     />,
                   )}
                 </Form.Item>
@@ -108,39 +110,39 @@ const FormTraCuuVBCC = (props) => {
             <Row gutter={[12, 2]}>
               <Col xs={24} md={8}>
                 <Form.Item
-                  label={<span style={{ fontSize: "15px" }}>Mã sinh viên</span>}
+                  label={<span style={{ fontSize: "15px" }}>{t("index.form.student_id")}</span>}
                 >
                   {getFieldDecorator("maSinhVien")(
                     <Input
                       style={{ fontSize: "15px" }}
                       size="large"
-                      placeholder="Nhập mã sinh viên"
+                      placeholder={t("index.form.enter_student_id")}
                     />,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24} md={8}>
                 <Form.Item
-                  label={<span style={{ fontSize: "15px" }}>Số hiệu VB</span>}
+                  label={<span style={{ fontSize: "15px" }}>{t("index.form.diploma_no")}</span>}
                 >
                   {getFieldDecorator("soHieuVanBang")(
                     <Input
                       style={{ fontSize: "15px" }}
                       size="large"
-                      placeholder="Nhập số hiệu văn bằng"
+                      placeholder={t("index.form.enter_diploma_no")}
                     />,
                   )}
                 </Form.Item>
               </Col>
               <Col xs={24} md={8}>
                 <Form.Item
-                  label={<span style={{ fontSize: "15px" }}>Số vào sổ</span>}
+                  label={<span style={{ fontSize: "15px" }}>{t("index.form.book_no")}</span>}
                 >
                   {getFieldDecorator("soVaoSoBang")(
                     <Input
                       style={{ fontSize: "15px" }}
                       size="large"
-                      placeholder="Ví dụ: TS25/{soVaoSo}"
+                      placeholder={t("index.form.example_book_no")}
                     />,
                   )}
                 </Form.Item>
@@ -212,7 +214,7 @@ const FormTraCuuVBCC = (props) => {
                     fontSize: "15px",
                   }}
                 >
-                  Tra cứu thông tin
+                  {t("index.form.search_button")}
                 </Button>
               </div>
             </Form.Item>

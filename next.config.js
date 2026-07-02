@@ -13,6 +13,11 @@ module.exports = {
   images: {
     disableStaticImages: true,
   },
+  i18n: {
+    locales: ["vi-VN", "en-US"],
+    defaultLocale: "vi-VN",
+    localeDetection: false,
+  },
 
   webpack: (config, {isServer}) => {
     if (!isServer) {
