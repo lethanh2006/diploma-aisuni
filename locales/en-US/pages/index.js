@@ -34,6 +34,19 @@ module.exports = {
     warning: "Notification",
     warning_2_fields: "Please enter at least 2 fields to search",
     no_info_found: "The information entered is incorrect or the diploma/certificate does not exist",
-    under_development: "This feature is currently under development. Thank you for your patience"
+    under_development: "This feature is currently under development. Thank you for your patience",
+    no_query_info: "No lookup information entered",
+    search_one_way: "Please search using only one of the two methods",
+    fill_all_info: "Must fill in all fields",
+    no_exam_info: "Incorrect information or exam results do not exist",
+    search_by_name_or_no: "Only search by full name and date of birth, or by diploma number",
+    enter_name_and_dob: "Must enter both full name and date of birth",
+    no_diploma_found: "Incorrect information or diploma does not exist",
+    search_name_dob_or_cccd_sbd: "You can only search by name and date of birth, or by ID card or candidate number",
+    search_name_dob_or_cccd: "You can only search by name and date of birth, or by ID card",
+    enter_name_and_dob_prompt: "Please enter both full name and date of birth to search",
+    no_lookup_info_found: "Search results not found",
+    search_name_dob_or_cccd_cmt: "You can only search by name and date of birth, or by ID card",
+    no_admission_found: "Admission results not found"
   }
 };

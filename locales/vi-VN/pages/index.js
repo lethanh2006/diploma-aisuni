@@ -34,6 +34,19 @@ module.exports = {
     warning: "Thông báo",
     warning_2_fields: "Vui lòng nhập ít nhất 2 thông tin để tra cứu",
     no_info_found: "Thông tin nhập sai hoặc không tồn tại thông tin văn bằng chứng chỉ",
-    under_development: "Chức năng này hiện tại đang được chúng tôi phát triển. Xin bạn hãy từ tốn"
+    under_development: "Chức năng này hiện tại đang được chúng tôi phát triển. Xin bạn hãy từ tốn",
+    no_query_info: "Chưa nhập thông tin tra cứu",
+    search_one_way: "Chỉ tìm kiếm 1 trong 2 cách",
+    fill_all_info: "Phải nhập đầy đủ thông tin",
+    no_exam_info: "Thông tin nhập sai hoặc không tồn tại thông tin kết quả thi",
+    search_by_name_or_no: "Chỉ tìm kiếm theo họ tên, ngày sinh hoặc theo số hiệu văn bằng",
+    enter_name_and_dob: "Phải nhập cả họ tên và ngày sinh",
+    no_diploma_found: "Thông tin nhập sai hoặc không tồn tại văn bằng",
+    search_name_dob_or_cccd_sbd: "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo CCCD hoặc số báo danh",
+    search_name_dob_or_cccd: "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo CCCD",
+    enter_name_and_dob_prompt: "Vui lòng nhập họ tên và ngày sinh để tra cứu",
+    no_lookup_info_found: "Không tìm thấy thông tin tra cứu",
+    search_name_dob_or_cccd_cmt: "Bạn chỉ có thể tra cứu theo tên và ngày sinh hoặc tra cứu theo cccd/cmt",
+    no_admission_found: "Không tìm thấy kết quả tuyển sinh"
   }
 };
