@@ -2,31 +2,34 @@ import { Button, Empty, Icon, Table, Tooltip } from "antd";
 import moment from "moment";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "components/Utils/useTranslation";
+import Link from "next/link";
 
 const KetQuaVanBang = ({ thongTinTraCuu = [] }) => {
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const columns = [
     {
-      title: "Số vào sổ",
+      title: t("index.table.book_no"),
       dataIndex: ["DuLieu", "soVaoSoBang"],
       key: "soVaoSoBang",
       width: 120,
     },
     {
-      title: "Số hiệu văn bằng",
+      title: t("index.table.diploma_no"),
       dataIndex: ["DuLieu", "soHieuVanBang"],
       key: "soHieuVanBang",
       width: 150,
     },
     {
-      title: "Họ tên",
+      title: t("index.table.fullname"),
       dataIndex: ["DuLieu", "hoTen"],
       key: "hoTen",
       width: 160,
     },
     {
-      title: "Ngày sinh",
+      title: t("index.table.dob"),
       key: "ngaySinh",
       align: "center",
       width: 100,
@@ -36,36 +39,37 @@ const KetQuaVanBang = ({ thongTinTraCuu = [] }) => {
           : "",
     },
     {
-      title: "Mã sinh viên",
+      title: t("index.table.student_id"),
       dataIndex: ["DuLieu", "maSinhVien"],
       key: "maSinhVien",
       width: 120,
     },
     {
-      title: "Thao tác",
+      title: t("index.table.action"),
       align: "center",
       render: (val, rec) => (
         <Tooltip
-          title={!rec?.DuLieu?._id ? "Chưa có thông tin văn bằng" : "Chi tiết"}
+          title={!rec?.DuLieu?._id ? t("index.table.no_info") : t("index.table.detail")}
         >
-          <a
-            href={rec?.DuLieu?._id ? `/vanbangchungchi/${rec.DuLieu._id}` : undefined}
-            style={{
-              display: "inline-flex",
-              justifyContent: "center",
-              alignItems: "center",
-              cursor: rec?.DuLieu?._id ? "pointer" : "not-allowed",
-              opacity: rec?.DuLieu?._id ? 1 : 0.5
-            }}
-            onClick={(e) => {
-              if (!rec?.DuLieu?._id) e.preventDefault();
-            }}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12.2002" cy="13.8" r="3" stroke="#007AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M20.4 15.2C20.4 10.6713 16.7287 7 12.2 7C7.67126 7 4 10.6713 4 15.2" stroke="#007AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
+          <Link href={rec?.DuLieu?._id ? `/vanbangchungchi/${rec.DuLieu._id}` : "#"} passHref>
+            <a
+              style={{
+                display: "inline-flex",
+                justifyContent: "center",
+                alignItems: "center",
+                cursor: rec?.DuLieu?._id ? "pointer" : "not-allowed",
+                opacity: rec?.DuLieu?._id ? 1 : 0.5
+              }}
+              onClick={(e) => {
+                if (!rec?.DuLieu?._id) e.preventDefault();
+              }}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12.2002" cy="13.8" r="3" stroke="#007AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M20.4 15.2C20.4 10.6713 16.7287 7 12.2 7C7.67126 7 4 10.6713 4 15.2" stroke="#007AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </Link>
         </Tooltip>
       ),
       width: 150,
@@ -75,7 +79,7 @@ const KetQuaVanBang = ({ thongTinTraCuu = [] }) => {
   if (thongTinTraCuu?.Error) {
     return (
       <div style={{ padding: 16, textAlign: "center" }}>
-        <i style={{ color: "red" }}>Không tồn tại thông tin văn bằng!</i>
+        <i style={{ color: "red" }}>{t("index.table.no_result_msg")}</i>
       </div>
     );
   }
@@ -106,7 +110,7 @@ const KetQuaVanBang = ({ thongTinTraCuu = [] }) => {
             letterSpacing: "0.03em",
             color: "#051A53"
           }}>
-            Kết quả tra cứu
+            {t("index.table.search_result_header")}
           </span>
           <svg
             width="32"
@@ -161,7 +165,7 @@ const KetQuaVanBang = ({ thongTinTraCuu = [] }) => {
               letterSpacing: "0.03em",
               color: "#373D4E"
             }}>
-              Vui lòng điền đầy đủ thông tin để tra cứu
+              {t("index.table.fill_info_prompt")}
             </span>
           </div>
         ) : (
@@ -179,7 +183,7 @@ const KetQuaVanBang = ({ thongTinTraCuu = [] }) => {
               pagination={false}
               locale={{
                 emptyText: (
-                  <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="Trống" />
+                  <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={t("index.table.empty")} />
                 ),
               }}
             />
