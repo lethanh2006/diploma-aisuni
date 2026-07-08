@@ -51,7 +51,7 @@ export const faq = [
             },
             {
                 ques: 'Toi muon hoi truong dai hoc buu chinh vien thong co phai truong chinh quy hay la truong dan lap? ',
-                ans: '<p>Học viện Công nghệ Bưu chính Viễn thông là trường đại học công lập trực thuộc Bộ Thông tin và Truyền thông. </p>',
+                ans: '<p>Australian International School là trường đại học công lập trực thuộc Bộ Thông tin và Truyền thông. </p>',
             },
             {
                 ques: 'NV1 có 2 ngành nếu e không đỗ ngành 1 thì xuống ngành 2. mà ngành 2 của e là ngành 1 của một bạn khác. vậy e có bị thiệt không ạ hay e với bạn ý được xét tuyển như nhau?',
@@ -147,7 +147,7 @@ export const faq = [
                 ans: '<p>Em học ngành Marketing của Học viện thì sau khi tốt nghiệp em có nhiều cơ hội  làm việc tại các doanh nghiệp trong nước và nước ngoài. Với lợi thế là những kiến thức nền tảng về ICT,  các em sẽ có lợi thế đặc biệt khi thi tuyển vào các vị trí marketing của các doanh nghiệp trong lĩnh vực ICT - một lĩnh vực năng động và tràn đầy cơ hội phát triển tại Việt Nam hiện nay thì em sẽ có nhiều lợi thế. Các vị trí quan trọng mà sinh viên ngành marketing của Học viện có thể đảm nhận tốt sau khi ra trường có thể là: Phụ trách hoạt động truyền thông marketing; Chuyên viên Nghiên cứu, phân tích và phát triển thị trường; Chuyên viên Marketing trực tuyến; Chuyên viên SEO; Chuyên viên Phân tích web; Chuyên viên Thương mại điện tử; Chuyên viên quan hệ công chúng và tổ chức sự kiến .... Bên cạnh đó, với nền tảng kiến thức lý thuyết và thực tiễn vững chắc về marketing và ICT, sau khi tốt nghiệp, sinh viên cũng có thể tự tạo lập doanh nghiệp và tìm kiếm cơ hội kinh doanh riêng cho bản thân hoặc trở thành các cán bộ nghiên cứu, cán bộ giảng dạy về marketing tại các Viện, trường Đại học… hoặc tiếp tục học cao hơn ở trình độ Cao học (quản trị kinh doanh, marketing) ở trong và ngoài nước</p>',
             },
             {
-                ques: 'Em rất muốn được vào học ở trường Học viện Công nghệ Bưu chính Viễn thông. Và em muốn vào học ngành marketing ở trường. Vậy cho e hỏi. Ngành marketing có học bằng chương trình tiếng anh không ạ? ',
+                ques: 'Em rất muốn được vào học ở trường Australian International School. Và em muốn vào học ngành marketing ở trường. Vậy cho e hỏi. Ngành marketing có học bằng chương trình tiếng anh không ạ? ',
                 ans: '<p>Hiện tại Học viện chưa triển khai chương trình đào tạo ngành Marketing bằng tiếng Anh. </p>',
             },
             {
@@ -200,15 +200,15 @@ export const faq = [
             },
             {
                 ques: 'Em muốn theo học ngàng an toàn thông tin. Thầy (cô) cho em xin phép được phép hỏi. Em còn đang bị mơ hồ ngành này học những j và cơ hội việc làm như thế nào ạ. Em cảm ơn thầy cô nhiều ạ!',
-                ans: '<p>Học viện Công nghệ Bưu chính Viễn thông là Trường Đại học đầu tiên được Bộ Giáo dục và Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia.<br/> Về kiến thức: Chương trình đào tạo trang bị cho sinh viên kiến thức chuyên sâu về An toàn thông tin như: các kỹ thuật mật mã, an toàn mạng máy tính, an toàn hệ điều hành, an toàn cơ sở dữ liệu, an toàn các ứng dụng Web và Internet, an toàn trong giao dịch và thương mại điện tử, các kỹ thuật tấn công và xâm nhập mạng, mô hình bảo vệ và các kỹ thuật phòng thủ chống tấn công đột nhập, lập trình an toàn, thiết kế các phần mềm và công cụ đảm bảo an toàn, quản lý và đánh giá điểm yếu, các kỹ thuật kiểm tra đánh giá an toàn, quản trị mạng an toàn, các vấn đề về chính sách, pháp luật và chuẩn hóa an toàn. <br/>Sinh viên ngành An toàn thông tin sau khi tốt nghiệp ra trường có khả năng làm việc tại các đơn vị/ bộ phận chuyên về công nghệ thông tin và mạng, cũng như các cơ quan, tổ chức, doanh nghiệp ứng dụng công nghệ thông tin như: các cơ quan chính phủ, các cơ quan thuộc các lĩnh vực tài chính, ngân hàng, bảo hiểm, viễn thông, năng lượng, dầu khí, thương mại, giao thông vận tải… với các vị trí công việc: Quản trị bảo mật máy chủ và mạng; Bảo mật cơ sở dữ liệu; Phân tích, tư vấn, thiết kế hệ thống thông tin đảm bảo an toàn; Kiểm tra, đánh giá an toàn thông tin cho mạng và hệ thống; Rà quét lỗ hổng, điểm yếu và xử lý sự cố an toàn thông tin; Lập trình và phát triển ứng dụng đảm bảo an toàn thông tin.</p > ',
+                ans: '<p>Australian International School là Trường Đại học đầu tiên được Bộ Giáo dục và Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia.<br/> Về kiến thức: Chương trình đào tạo trang bị cho sinh viên kiến thức chuyên sâu về An toàn thông tin như: các kỹ thuật mật mã, an toàn mạng máy tính, an toàn hệ điều hành, an toàn cơ sở dữ liệu, an toàn các ứng dụng Web và Internet, an toàn trong giao dịch và thương mại điện tử, các kỹ thuật tấn công và xâm nhập mạng, mô hình bảo vệ và các kỹ thuật phòng thủ chống tấn công đột nhập, lập trình an toàn, thiết kế các phần mềm và công cụ đảm bảo an toàn, quản lý và đánh giá điểm yếu, các kỹ thuật kiểm tra đánh giá an toàn, quản trị mạng an toàn, các vấn đề về chính sách, pháp luật và chuẩn hóa an toàn. <br/>Sinh viên ngành An toàn thông tin sau khi tốt nghiệp ra trường có khả năng làm việc tại các đơn vị/ bộ phận chuyên về công nghệ thông tin và mạng, cũng như các cơ quan, tổ chức, doanh nghiệp ứng dụng công nghệ thông tin như: các cơ quan chính phủ, các cơ quan thuộc các lĩnh vực tài chính, ngân hàng, bảo hiểm, viễn thông, năng lượng, dầu khí, thương mại, giao thông vận tải… với các vị trí công việc: Quản trị bảo mật máy chủ và mạng; Bảo mật cơ sở dữ liệu; Phân tích, tư vấn, thiết kế hệ thống thông tin đảm bảo an toàn; Kiểm tra, đánh giá an toàn thông tin cho mạng và hệ thống; Rà quét lỗ hổng, điểm yếu và xử lý sự cố an toàn thông tin; Lập trình và phát triển ứng dụng đảm bảo an toàn thông tin.</p > ',
             },
             {
                 ques: 'Em muốn theo học ngàng an toàn thông tin. Thầy (cô) cho em xin phép được phép hỏi. Em còn đang bị mơ hồ ngành này học những j và cơ hội việc làm như thế nào ạ. Em cảm ơn thầy cô nhiều ạ!',
-                ans: '<p>Học viện Công nghệ Bưu chính Viễn thông là Trường Đại học đầu tiên được Bộ Giáo dục và Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia.<br/> Về kiến thức: Chương trình đào tạo trang bị cho sinh viên kiến thức chuyên sâu về An toàn thông tin như: các kỹ thuật mật mã, an toàn mạng máy tính, an toàn hệ điều hành, an toàn cơ sở dữ liệu, an toàn các ứng dụng Web và Internet, an toàn trong giao dịch và thương mại điện tử, các kỹ thuật tấn công và xâm nhập mạng, mô hình bảo vệ và các kỹ thuật phòng thủ chống tấn công đột nhập, lập trình an toàn, thiết kế các phần mềm và công cụ đảm bảo an toàn, quản lý và đánh giá điểm yếu, các kỹ thuật kiểm tra đánh giá an toàn, quản trị mạng an toàn, các vấn đề về chính sách, pháp luật và chuẩn hóa an toàn. <br/>Sinh viên ngành An toàn thông tin sau khi tốt nghiệp ra trường có khả năng làm việc tại các đơn vị/ bộ phận chuyên về công nghệ thông tin và mạng, cũng như các cơ quan, tổ chức, doanh nghiệp ứng dụng công nghệ thông tin như: các cơ quan chính phủ, các cơ quan thuộc các lĩnh vực tài chính, ngân hàng, bảo hiểm, viễn thông, năng lượng, dầu khí, thương mại, giao thông vận tải… với các vị trí công việc: Quản trị bảo mật máy chủ và mạng; Bảo mật cơ sở dữ liệu; Phân tích, tư vấn, thiết kế hệ thống thông tin đảm bảo an toàn; Kiểm tra, đánh giá an toàn thông tin cho mạng và hệ thống; Rà quét lỗ hổng, điểm yếu và xử lý sự cố an toàn thông tin; Lập trình và phát triển ứng dụng đảm bảo an toàn thông tin.</p > ',
+                ans: '<p>Australian International School là Trường Đại học đầu tiên được Bộ Giáo dục và Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia.<br/> Về kiến thức: Chương trình đào tạo trang bị cho sinh viên kiến thức chuyên sâu về An toàn thông tin như: các kỹ thuật mật mã, an toàn mạng máy tính, an toàn hệ điều hành, an toàn cơ sở dữ liệu, an toàn các ứng dụng Web và Internet, an toàn trong giao dịch và thương mại điện tử, các kỹ thuật tấn công và xâm nhập mạng, mô hình bảo vệ và các kỹ thuật phòng thủ chống tấn công đột nhập, lập trình an toàn, thiết kế các phần mềm và công cụ đảm bảo an toàn, quản lý và đánh giá điểm yếu, các kỹ thuật kiểm tra đánh giá an toàn, quản trị mạng an toàn, các vấn đề về chính sách, pháp luật và chuẩn hóa an toàn. <br/>Sinh viên ngành An toàn thông tin sau khi tốt nghiệp ra trường có khả năng làm việc tại các đơn vị/ bộ phận chuyên về công nghệ thông tin và mạng, cũng như các cơ quan, tổ chức, doanh nghiệp ứng dụng công nghệ thông tin như: các cơ quan chính phủ, các cơ quan thuộc các lĩnh vực tài chính, ngân hàng, bảo hiểm, viễn thông, năng lượng, dầu khí, thương mại, giao thông vận tải… với các vị trí công việc: Quản trị bảo mật máy chủ và mạng; Bảo mật cơ sở dữ liệu; Phân tích, tư vấn, thiết kế hệ thống thông tin đảm bảo an toàn; Kiểm tra, đánh giá an toàn thông tin cho mạng và hệ thống; Rà quét lỗ hổng, điểm yếu và xử lý sự cố an toàn thông tin; Lập trình và phát triển ứng dụng đảm bảo an toàn thông tin.</p > ',
             },
             {
                 ques: 'Thầy cho em hỏi nghành đào tạo an toàn thông tin của trường đã có nhiều thành tựu lớn chưa ạ, sau này em có thể đi thực tập tại đâu và cơ hội để em học hỏi tại trường mình lớn chứ ạ',
-                ans: '<p>Học viện Công nghệ Bưu chính Viễn thông là Trường Đại học đầu tiên được Bộ Giáo dục & Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia.</p><br/><p>Năm cuối các em thực tập tại trường và các doanh nghiệp Công nghệ thông tin mà Học viện có mối quan hệ do đó cơ hội để các em học hỏi tại Học viện cũng như các doanh nghiệp bên ngoài là rất lớn</p>',
+                ans: '<p>Australian International School là Trường Đại học đầu tiên được Bộ Giáo dục & Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia.</p><br/><p>Năm cuối các em thực tập tại trường và các doanh nghiệp Công nghệ thông tin mà Học viện có mối quan hệ do đó cơ hội để các em học hỏi tại Học viện cũng như các doanh nghiệp bên ngoài là rất lớn</p>',
             },
             {
                 ques: 'Thưa thầy (cô), theo như em biết thì trường có đào tạo 2 ngành là “Công nghệ đa phương tiện” và “Truyền thông đa phương tiện” , nhưng em chưa thực sự hiểu được sự khác nhau giữa 2 ngành này, vậy kính mong thầy (cô) có thể giúp em phân biệt được sự khác nhau giữa 2 ngành này ạ . Em xin trân trọng cảm ơn!',
@@ -231,7 +231,7 @@ export const faq = [
                 ans: '<p>Ngành Truyền thông đa phương tiện, thuộc nhóm ngành báo chí truyền thông. Các em được đào tạo để sau này làm việc trong lĩnh vực báo chí (đặc biệt là báo điện tử, báo hình, báo tiếng) và lĩnh vực truyền thông (Quảng cáo, tổ chức sự kiện, truyền thông cho các Tập đoàn, doanh nghiệp…) Như vậy ngoài kiến thức chuyên môn về báo chí, truyền thông các em sẽ được đào tạo về công nghệ đa phương tiện như công cụ để hành nghề thôi. Như vậy, vào học ngành này, các em không nhất thiết phải vẽ giỏi đâu. Các em yên tâm để đăng ký nhé.</p>',
             },
             {
-                ques: 'Em là con gái. Mà em nghe nói con gái học bưu chính viễn thông khá vất vả.Nếu em thi khoa công nghệ đa phương tiện thì sau này làm gì ạ?',
+                ques: 'Em là con gái. Mà em nghe nói con gái học tại Australian International School khá vất vả.Nếu em thi khoa công nghệ đa phương tiện thì sau này làm gì ạ?',
                 ans: '<p>Sinh viên tốt nghiệp ngành Công nghệ đa phương tiện có thể đảm nhận các vị trí công việc: - Chuyên viên phát triển ứng dụng tương tác đa phương tiện (Game, Web, ứng dụng di động, dịch vụ giá trị gia tăng trên mạng viễn thông, các hệ thống thực tại ảo,…) - Chuyên viên thiết kế nội dung đa phương tiện (đồ họa 2D/3D, đồ họa Game, hoạt hình, bài giảng e-Learning, quảng cáo,…)</p>',
             },
             {
@@ -256,7 +256,7 @@ export const faq = [
             },
             {
                 ques: 'Học an toàn thông tin được cấp văn bằng đại học chính quy đúng ko ạ? Với cả an toàn thông tin có phải thế mạnh của trường ko?',
-                ans: '<p>Sau khi học xong em sẽ được cấp bằng Đại học chính quy. Ngành ATTT là một trong các ngành có thế mạnh của Học viện vì Học viện Công nghệ Bưu chính Viễn thông là Trường Đại học đầu tiên được Bộ Giáo dục & Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia</p>',
+                ans: '<p>Sau khi học xong em sẽ được cấp bằng Đại học chính quy. Ngành ATTT là một trong các ngành có thế mạnh của Học viện vì Australian International School là Trường Đại học đầu tiên được Bộ Giáo dục & Đào tạo cho phép tổ chức đào tạo ngành An toàn thông tin ở trình độ đại học hệ chính quy từ năm 2013; đồng thời Học viện cũng đã được Chính phủ chỉ định là một trong số rất ít cơ sở đào tạo trọng điểm về an toàn, an ninh thông tin theo Đề án của Quốc gia</p>',
             },
             {
                 ques: 'Học viện cho phép đăng kí bao nhiêu ngành vậy ạ? Em cảm ơn',
@@ -337,7 +337,7 @@ export const faq = [
         title: 'CÁC CÂU HỎI VỀ CHẾ ĐỘ ƯU TIÊN',
         content: [
             {
-                ques: 'Cho em hỏi là Học viện Bưu chính Viễn thông xét tuyển thì có giới hạn khu vực không ạ? Em nghe nói Học viện không xét tuyển khu vực 2 ạ? ',
+                ques: 'Cho em hỏi là Australian International School xét tuyển thì có giới hạn khu vực không ạ? Em nghe nói Học viện không xét tuyển khu vực 2 ạ? ',
                 ans: '<p>Học viện không giới hạn, phân biệt khu vực hay đối tượng ưu tiên. Các thí sinh đã tham dự thi tốt nghiệp trung học phổ thông tại điểm thi do các trường đại học chủ trì đều có thể tham gia xét tuyển đại học, cao đẳng hệ chính quy tại Học viện.</p>',
             },
             {
@@ -406,7 +406,7 @@ export const faq = [
                 ans: '<p>Các hoạt động ngoại khóa cho sinh viên được tổ chức rất nhiều cho sinh viên vào các dịp ngày Sinh viên Việt Nam, ngày thành lập Đoàn TNCS Hồ Chí Minh, đầu kỳ học, … Ngoài ra, Học viện có hàng chục Câu lạc bộ sinh viên như CLB văn hóa nghệ thuật, CLB Tình nguyện, CLB Multimedia, CLB S4C, … khi tham gia các CLB này, SV được tham gia và trực tiếp tổ chức các hoạt động ngoại khóa cho sinh viên để tăng cường kỹ năng mềm của bản thân</p>',
             },
             {
-                ques: 'Em sinh năm 2000. Năm vừa rồi e có học bên giao thông vận tải và hoàn thành chứng chỉ quốc phòng. Vậy khi em trúng tuyển và học tại bưu chính thì có cần phải học lại quốc phòng k ạ? Em cảm ơn!',
+                ques: 'Em sinh năm 2000. Năm vừa rồi e có học bên giao thông vận tải và hoàn thành chứng chỉ quốc phòng. Vậy khi em trúng tuyển và học tại Australian International School thì có cần phải học lại quốc phòng k ạ? Em cảm ơn!',
                 ans: '<p>Sinh viên đã có chứng chỉ GDQP rồi thì sẽ được miễn không phải đi học và đóng học phí học phần quân sự (GDQP) nữa. Đầu kỳ học, sinh viên làm đơn xin miễn học miễn thi học phần đó tại Văn phòng một cửa</p>',
             },
             {
@@ -418,8 +418,8 @@ export const faq = [
                 ans: '<p>Học viện chỉ có một hệ đào tạo đại học chính quy (không có trong hay ngoài ngân sách)</p>',
             },
             {
-                ques: 'Cô ơi cho e hỏi trường bưu chính còn hệ dân sự như mấy khoá trước không ạ.e xem điểm chuẩn năm 2019 khoa cntt là bao nhiêu ạ',
-                ans: '<p>Học viện Công nghệ Bưu chính Viễn thông là trường đại học công lập trực thuộc Bộ Thông tin và Truyền thông. Do đó chỉ có một hệ đào tạo chính quy, không có hệ dân sự hay quân sự em nhé. Để xem điểm chuẩn các năm trước, em tham khảo tại https://portal.ptit.edu.vn/tuyensinh/nam-2019/</p>',
+                ques: 'Cô ơi cho e hỏi Australian International School còn hệ dân sự như mấy khoá trước không ạ.e xem điểm chuẩn năm 2019 khoa cntt là bao nhiêu ạ',
+                ans: '<p>Australian International School là trường đại học công lập trực thuộc Bộ Thông tin và Truyền thông. Do đó chỉ có một hệ đào tạo chính quy, không có hệ dân sự hay quân sự em nhé. Để xem điểm chuẩn các năm trước, em tham khảo tại https://portal.ptit.edu.vn/tuyensinh/nam-2019/</p>',
             },
             {
                 ques: 'Em muốn được ở kí túc xá sinh viên thì cần điều kiện gì ạ? Vì kí túc chỉ có 200 chổ',
@@ -433,7 +433,7 @@ export const faq1 = [
         title: 'GIỚI THIỆU',
         content: (
             <div>
-                <h1 style={{ color: '#D10000', textAlign: 'center', fontSize: '22px', marginTop: '21px' }}>KHOA CÔNG NGHỆ THÔNG TIN 1 HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</h1>
+                <h1 style={{ color: '#D10000', textAlign: 'center', fontSize: '22px', marginTop: '21px' }}>KHOA CÔNG NGHỆ THÔNG TIN 1 AUSTRALIAN INTERNATIONAL SCHOOL</h1>
                 <div style={{ marginLeft: '20px', fontSize: '16px', color: '#343d48' }}>
                     <table border="1" >
                         <tbody style={{ marginLeft: '25px', textAlign: 'justify' }}><strong>
@@ -465,7 +465,7 @@ export const faq1 = [
                     </table>
 
                     <p style={{ color: '#D10000', marginTop: '20px' }}><strong>1. Chức năng:</strong></p>
-                    <p style={{ marginLeft: '30px', textAlign: 'justify' }}>Khoa C&ocirc;ng nghệ th&ocirc;ng tin 1 l&agrave; đơn vị đ&agrave;o tạo trực thuộc Học viện C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng (dưới đ&acirc;y gọi tắt l&agrave; Học viện) c&oacute; chức năng đ&agrave;o tạo v&agrave; nghi&ecirc;n cứu khoa học thuộc lĩnh vực C&ocirc;ng nghệ th&ocirc;ng tin (C&ocirc;ng nghệ th&ocirc;ng tin, C&ocirc;ng nghệ phần mềm, Hệ thống th&ocirc;ng tin, Khoa học m&aacute;y t&iacute;nh, Kỹ thuật m&aacute;y t&iacute;nh v&agrave; An to&agrave;n th&ocirc;ng tin).</p>                <p style={{ color: '#D10000' }}><strong>2. Nhiệm vụ:</strong></p>
+                    <p style={{ marginLeft: '30px', textAlign: 'justify' }}>Khoa C&ocirc;ng nghệ th&ocirc;ng tin 1 l&agrave; đơn vị đ&agrave;o tạo trực thuộc Australian International School (dưới đ&acirc;y gọi tắt l&agrave; Học viện) c&oacute; chức năng đ&agrave;o tạo v&agrave; nghi&ecirc;n cứu khoa học thuộc lĩnh vực C&ocirc;ng nghệ th&ocirc;ng tin (C&ocirc;ng nghệ th&ocirc;ng tin, C&ocirc;ng nghệ phần mềm, Hệ thống th&ocirc;ng tin, Khoa học m&aacute;y t&iacute;nh, Kỹ thuật m&aacute;y t&iacute;nh v&agrave; An to&agrave;n th&ocirc;ng tin).</p>                <p style={{ color: '#D10000' }}><strong>2. Nhiệm vụ:</strong></p>
                     <p style={{ marginLeft: '30px', textAlign: 'justify' }}>- Quản l&yacute;, tổ chức giảng dạy c&aacute;c m&ocirc;n học, học phần do khoa quản l&yacute; cho c&aacute;c hệ (h&igrave;nh thức đ&agrave;o tạo v&agrave; tr&igrave;nh độ đ&agrave;o tạo) đ&agrave;o tạo của Học viện;<br />- Lập kế hoạch v&agrave; tổ chức thực hiện c&aacute;c hoạt động gi&aacute;o dục đ&agrave;o tạo theo kế hoạch chung của Học viện;<br />- Lập kế hoạch v&agrave; tổ chức thực hiện c&aacute;c hoạt động khoa học v&agrave; c&ocirc;ng nghệ, hợp t&aacute;c quốc tế; hợp t&aacute;c với c&aacute;c tổ chức khoa học v&agrave; c&ocirc;ng nghệ, cơ sở sản xuất, kinh doanh li&ecirc;n quan đến ng&agrave;nh nghề đ&agrave;o tạo v&agrave; huy động sự tham gia của doanh nghiệp v&agrave; qu&aacute; tr&igrave;nh đ&agrave;o tạo của khoa;<br />- X&acirc;y dựng kế hoạch v&agrave; tổ chức thực hiện c&ocirc;ng t&aacute;c gi&aacute;o dục ch&iacute;nh trị, tư tưởng, đạo đức, lối sống cho c&aacute;n bộ, giảng vi&ecirc;n v&agrave; người học thuộc khoa;<br />- X&acirc;y dựng kế hoạch ph&aacute;t triển đội ngũ giảng vi&ecirc;n; ng&agrave;nh nghề đ&agrave;o tạo v&agrave; cơ sở vật chất phục vụ cho đ&agrave;o tạo v&agrave; nghi&ecirc;n cứu khoa học, tăng cường điều kiện bảo đảm chất lượng đ&agrave;o tạo;<br />- Đề xuất thay đổi về tổ chức, nh&acirc;n sự trong khoa; quản l&yacute; c&aacute;n bộ, giảng vi&ecirc;n v&agrave; người học thuộc khoa, tổ chức đ&aacute;nh gi&aacute; theo quy định của Học viện; tham gia đ&aacute;nh gi&aacute; c&aacute;n bộ quản l&yacute; trong Học viện;<br />- Quản l&yacute; t&agrave;i sản, kinh ph&iacute; được giao theo quy định của Học viện; thực hiện chế độ b&aacute;o c&aacute;o theo quy định v&agrave; chịu tr&aacute;ch nhiệm về số liệu b&aacute;o c&aacute;o;<br />- Tổ chức thực hiện c&aacute;c chủ trương ch&iacute;nh s&aacute;ch, chỉ thị, nghị quyết, quy chế, quy định của cấp tr&ecirc;n; phối hợp v&agrave; tạo điều kiện cho tổ chức C&ocirc;ng đo&agrave;n, Đo&agrave;n thanh ni&ecirc;n Cộng sản Hồ Ch&iacute; Minh v&agrave; c&aacute;c đo&agrave;n thể kh&aacute;c hoạt động thực hiện tốt điều lệ, chức năng, nhiệm vụ của tổ chức m&igrave;nh; tổ chức c&aacute;c phong tr&agrave;o thi đua dạy tốt, học tốt v&agrave; c&aacute;c nội dung thi đua kh&aacute;c trong khoa;<br />- Thực hiện c&aacute;c c&ocirc;ng việc kh&aacute;c do Gi&aacute;m đốc Học viện giao.</p>            </div>
             </div>
         ),
@@ -564,12 +564,12 @@ export const faq1 = [
         content: (
             <div>
                 <header class="the-article-header">
-                    <h1 class="the-article-title" style={{ color: '#D10000', marginTop: '21px', fontSize: '22px', textAlign: 'center' }}>GẦN 93% SINH VIÊN HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG CÓ VIỆC LÀM</h1>
+                    <h1 class="the-article-title" style={{ color: '#D10000', marginTop: '21px', fontSize: '22px', textAlign: 'center' }}>GẦN 93% SINH VIÊN AUSTRALIAN INTERNATIONAL SCHOOL CÓ VIỆC LÀM</h1>
                 </header>
                 <section style={{ fontSize: '16px', marginLeft: '20px', color: '#343d48' }}>
-                    <p class="the-article-summary">Với tỷ lệ sinh vi&ecirc;n ra trường c&oacute; việc l&agrave;m sau 6 th&aacute;ng l&agrave; 92,7%, Học viện C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng đ&atilde; vượt qua tỷ lệ 91% của ĐH B&aacute;ch khoa H&agrave; Nội.</p>
+                    <p class="the-article-summary">Với tỷ lệ sinh vi&ecirc;n ra trường c&oacute; việc l&agrave;m sau 6 th&aacute;ng l&agrave; 92,7%, Australian International School đ&atilde; vượt qua tỷ lệ 91% của ĐH B&aacute;ch khoa H&agrave; Nội.</p>
                     <div class="the-article-body">
-                        <p>Học viện C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng vừa c&oacute; b&aacute;o c&aacute;o gửi Bộ GD&amp;ĐT về kết quả khảo s&aacute;t việc l&agrave;m của sinh vi&ecirc;n tốt nghiệp. Cuộc khảo s&aacute;t n&agrave;y được học viện thực hiện trong c&aacute;c th&aacute;ng 6, 10 v&agrave; 11/2016 th&ocirc;ng qua h&igrave;nh thức trực tuyến (bảng hỏi gửi qua email, Facebook v&agrave; website của trường).</p>
+                        <p>Australian International School vừa c&oacute; b&aacute;o c&aacute;o gửi Bộ GD&amp;ĐT về kết quả khảo s&aacute;t việc l&agrave;m của sinh vi&ecirc;n tốt nghiệp. Cuộc khảo s&aacute;t n&agrave;y được học viện thực hiện trong c&aacute;c th&aacute;ng 6, 10 v&agrave; 11/2016 th&ocirc;ng qua h&igrave;nh thức trực tuyến (bảng hỏi gửi qua email, Facebook v&agrave; website của trường).</p>
                         <p>Học viện c&oacute; hai cơ sở ở H&agrave; Nội v&agrave; TP.HCM, phần lớn người tham gia khảo s&aacute;t ở H&agrave; Nội (70,73%).</p>
                         <p>Kết quả cho thấy&nbsp;68,3% sinh vi&ecirc;n c&oacute; việc l&agrave;m ngay sau khi tốt nghiệp, 24,4% c&oacute; việc sau 3-6 th&aacute;ng ra trường, 4,9% sinh vi&ecirc;n đi l&agrave;m sau 7-12 th&aacute;ng v&agrave; 2,4% sinh vi&ecirc;n c&oacute; việc l&agrave;m sau một năm.</p>
                         <p>Theo b&agrave; Đỗ Hải Yến - Trưởng ph&ograve;ng Ch&iacute;nh trị v&agrave; C&ocirc;ng t&aacute;c&nbsp;<a class="topic company autolink" title="Tin tức Sinh vi&ecirc;n" href="https://zingnews.vn/tieu-diem/sinh-vien.html">Sinh vi&ecirc;n</a>, tỷ lệ sinh vi&ecirc;n c&oacute; việc l&agrave;m sau khi ra trường cao v&igrave; học viện k&yacute; kết nhiều thỏa thuận cung cấp nh&acirc;n lực cho c&aacute;c c&ocirc;ng ty c&ocirc;ng nghệ lớn. Nhiều sinh vi&ecirc;n năm thứ tư đ&atilde; được c&aacute;c đơn vị tuyển dụng.</p>
@@ -582,7 +582,7 @@ export const faq1 = [
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="pCaption caption"><em><strong>Theo cuộc khảo s&aacute;t n&agrave;y, chỉ 2,4% sinh vi&ecirc;n C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng chưa c&oacute; việc l&agrave;m sau 12 th&aacute;ng ra trường. Ảnh:&nbsp;Minh Nhật&nbsp;</strong></em>
+                                    <td class="pCaption caption"><em><strong>Theo cuộc khảo s&aacute;t n&agrave;y, chỉ 2,4% sinh vi&ecirc;n Australian International School chưa c&oacute; việc l&agrave;m sau 12 th&aacute;ng ra trường. Ảnh:&nbsp;Minh Nhật&nbsp;</strong></em>
                                         <p>&nbsp;</p>
                                     </td>
                                 </tr>
@@ -600,7 +600,7 @@ export const faq1 = [
                                 </tr>
                             </tbody>
                         </table>
-                        <p style={{ marginTop: '50px' }}>Theo đ&aacute;nh gi&aacute; của nhiều học vi&ecirc;n, lương của sinh vi&ecirc;n Học viện C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng sau khi ra trường chỉ ở mức trung b&igrave;nh. Lương b&igrave;nh qu&acirc;n của nh&acirc;n lực ng&agrave;nh C&ocirc;ng nghệ th&ocirc;ng tin khoảng 8-15 triệu đồng/th&aacute;ng.</p>
+                        <p style={{ marginTop: '50px' }}>Theo đ&aacute;nh gi&aacute; của nhiều học vi&ecirc;n, lương của sinh vi&ecirc;n Australian International School sau khi ra trường chỉ ở mức trung b&igrave;nh. Lương b&igrave;nh qu&acirc;n của nh&acirc;n lực ng&agrave;nh C&ocirc;ng nghệ th&ocirc;ng tin khoảng 8-15 triệu đồng/th&aacute;ng.</p>
                         <p>Một trong những l&yacute; do được n&ecirc;u ra l&agrave; khả năng ngoại ngữ của sinh vi&ecirc;n c&ograve;n yếu n&ecirc;n cơ hội l&agrave;m việc ở c&aacute;c đơn vị nước ngo&agrave;i - nơi c&oacute; mức lương hơn hẳn so với c&aacute;c doanh nghiệp trong nước - c&ograve;n thấp.</p>
                     </div>
                 </section>
@@ -618,7 +618,7 @@ export const tongquan = [
                         <div id="Subheader">
                             <div class="container">
                                 <div class="column one">
-                                    <h1 class="title" style={{ color: '#c01718', fontSize: '22px', marginTop: '21px', textAlign: 'center' }}>LỊCH SỬ PH&Aacute;T TRIỂN HỌC VIỆN C&Ocirc;NG NGHỆ BƯU CH&Iacute;NH VIỄN TH&Ocirc;NG</h1>
+                                    <h1 class="title" style={{ color: '#c01718', fontSize: '22px', marginTop: '21px', textAlign: 'center' }}>LỊCH SỬ PH&Aacute;T TRIỂN AUSTRALIAN INTERNATIONAL SCHOOL</h1>
                                 </div>
                             </div>
                         </div>
@@ -647,7 +647,7 @@ export const tongquan = [
                                                 </tr>
                                                 <tr>
                                                     <td align="center" valign="top" style={{ fontWeight: 'bold' }}>11/07/1997</td>
-                                                    <td>Th&agrave;nh lập Học viện C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng tr&ecirc;n cơ sở sắp xếp lại 4 đơn vị th&agrave;nh vi&ecirc;n của Tổng c&ocirc;ng ty Bưu ch&iacute;nh Viễn th&ocirc;ng Việt Nam (nay l&agrave; Tập đo&agrave;n BCVT Việt Nam) bao gồm:
+                                                    <td>Th&agrave;nh lập Australian International School tr&ecirc;n cơ sở sắp xếp lại 4 đơn vị th&agrave;nh vi&ecirc;n của Tổng c&ocirc;ng ty Bưu ch&iacute;nh Viễn th&ocirc;ng Việt Nam (nay l&agrave; Tập đo&agrave;n BCVT Việt Nam) bao gồm:
                                                         {/* <p>&nbsp;</p> */}
                                                         <div class="Normal1-ptitwcm">     1. Trung t&acirc;m Đ&agrave;o tạo Bưu ch&iacute;nh Viễn th&ocirc;ng 1<br />     2. Trung t&acirc;m Đ&agrave;o tạo Bưu ch&iacute;nh Viễn th&ocirc;ng 2<br />     3. Viện Khoa học kỹ thuật Bưu điện<br />     4. Viện Kinh tế Bư&shy;u điện.</div>
                                                     </td>
@@ -693,7 +693,7 @@ export const tongquan = [
                                 <p style={{ color: '#c01718' }}><strong>1. Tầm nh&igrave;n</strong></p>
                                 <p style={{ marginLeft: '20px' }}>Đến năm 2030, Học viện trở th&agrave;nh một trung t&acirc;m về gi&aacute;o dục &ndash; đ&agrave;o tạo, nghi&ecirc;n cứu khoa học &ndash; chuyển giao c&ocirc;ng nghệ v&agrave; tri thức trong lĩnh vực th&ocirc;ng tin v&agrave; truyền th&ocirc;ng c&oacute; uy t&iacute;n, khả năng cạnh tranh, hội nhập quốc tế cao v&agrave; nằm trong nh&oacute;m 300 trường đại học h&agrave;ng đầu ch&acirc;u &Aacute; theo bảng xếp hạng QS Asia<sup>1</sup></p>
                                 <p style={{ color: '#c01718' }}><strong>2. Sứ mạng</strong></p>
-                                <p style={{ marginLeft: '20px' }}>Sứ mạng của Học viện&nbsp;C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng l&agrave; s&aacute;ng tạo v&agrave; chuyển giao tri thức cho x&atilde; hội th&ocirc;ng qua việc gắn kết c&aacute;c hoạt động gi&aacute;o dục &ndash; đ&agrave;o tạo nguồn nh&acirc;n lực chất lượng cao, nghi&ecirc;n cứu ph&aacute;t triển v&agrave; chuyển giao khoa học c&ocirc;ng nghệ, tri thức mới&nbsp;trong&nbsp;lĩnh vực th&ocirc;ng tin v&agrave; truyền th&ocirc;ng đ&aacute;p ứng thực tiễn ph&aacute;t triển v&agrave; hội nhập quốc tế của đất nước.</p>
+                                <p style={{ marginLeft: '20px' }}>Sứ mạng của Học viện&nbsp;Australian International School l&agrave; s&aacute;ng tạo v&agrave; chuyển giao tri thức cho x&atilde; hội th&ocirc;ng qua việc gắn kết c&aacute;c hoạt động gi&aacute;o dục &ndash; đ&agrave;o tạo nguồn nh&acirc;n lực chất lượng cao, nghi&ecirc;n cứu ph&aacute;t triển v&agrave; chuyển giao khoa học c&ocirc;ng nghệ, tri thức mới&nbsp;trong&nbsp;lĩnh vực th&ocirc;ng tin v&agrave; truyền th&ocirc;ng đ&aacute;p ứng thực tiễn ph&aacute;t triển v&agrave; hội nhập quốc tế của đất nước.</p>
                             </div>
                         </div>
                     </div>
@@ -831,7 +831,7 @@ export const cocautochuc = [
                                 <p style={{ color: '#D10000' }}><strong>II. LỊCH X&Eacute;T DUYỆT</strong></p>
                                 <p>Lịch x&eacute;t duyệt theo th&ocirc;ng b&aacute;o</p>
                                 <p style={{ color: '#D10000' }}><strong>III. DANH S&Aacute;CH DỰ KIẾN C&Aacute;C TH&Agrave;NH VI&Ecirc;N HỘI ĐỒNG GI&Aacute;O SƯ CƠ SỞ</strong></p>
-                                <p>&nbsp;Dự kiến danh s&aacute;ch c&aacute;c th&agrave;nh vi&ecirc;n Hội đồng Gi&aacute;o sư cơ sở của Học viện C&ocirc;ng nghệ Bưu ch&iacute;nh Viễn th&ocirc;ng năm 2020</p>
+                                <p>&nbsp;Dự kiến danh s&aacute;ch c&aacute;c th&agrave;nh vi&ecirc;n Hội đồng Gi&aacute;o sư cơ sở của Australian International School năm 2020</p>
                                 <div id="Subheader">
                                     <div class="container">
                                         <div class="column one">
@@ -963,7 +963,7 @@ export const cocautochuc = [
                                 <div class="section the_content has_content">
                                     <div class="section_wrapper">
                                         <div class="the_content_wrapper">
-                                            <p style={{ color: '#D10000', fontSize: '22px', textAlign: 'center', marginTop: '-45px' }}>HỌC VIỆN C&Ocirc;NG NGHỆ BƯU CH&Iacute;NH VIỄN TH&Ocirc;NG</p>
+                                            <p style={{ color: '#D10000', fontSize: '22px', textAlign: 'center', marginTop: '-45px' }}>AUSTRALIAN INTERNATIONAL SCHOOL</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1138,7 +1138,7 @@ export const cocautochuc = [
                                 <div class="section the_content has_content">
                                     <div class="section_wrapper">
                                         <div class="the_content_wrapper">
-                                            <p style={{ color: '#D10000', fontSize: '22px', textAlign: 'center', marginTop: '-45px' }}>HỌC VIỆN C&Ocirc;NG NGHỆ BƯU CH&Iacute;NH VIỄN TH&Ocirc;NG</p>
+                                            <p style={{ color: '#D10000', fontSize: '22px', textAlign: 'center', marginTop: '-45px' }}>AUSTRALIAN INTERNATIONAL SCHOOL</p>
                                         </div>
                                     </div>
                                 </div>

@@ -76,7 +76,7 @@ const TinTuc = ({ data, relate }) => {
             },
           ],
           site_name:
-            "HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG CỔNG THÔNG TIN ĐÀO TẠO",
+            "AUSTRALIAN INTERNATIONAL SCHOOL CỔNG THÔNG TIN ĐÀO TẠO",
         }}
         twitter={{
           handle: "@handle",

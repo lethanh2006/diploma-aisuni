@@ -208,8 +208,8 @@ const FormTraCuuVBCC = (props) => {
                     gap: "7.23px",
                     width: "200px",
                     height: "40px",
-                    background: "#BC2826",
-                    borderColor: "#BC2826",
+                    background: "#0079C1",
+                    borderColor: "#0079C1",
                     borderRadius: "4px",
                     fontSize: "15px",
                   }}

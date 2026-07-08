@@ -96,7 +96,7 @@ const ChiTietVanBang = () => {
               >
                 <path
                   d="M22.667 22L28.0003 27.3333"
-                  stroke="#BC2626"
+                  stroke="#0079C1"
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -105,7 +105,7 @@ const ChiTietVanBang = () => {
                   cx="14.6667"
                   cy="14.6667"
                   r="10.6667"
-                  stroke="#BC2626"
+                  stroke="#0079C1"
                   strokeWidth="3"
                   strokeLinecap="round"
                   strokeLinejoin="round"

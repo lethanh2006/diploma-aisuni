@@ -39,11 +39,11 @@ export default function Layout({ children, home }) {
         <link rel="prerender" href="https://tuyensinh.ptit.edu.vn/" />
         <link />
         <title>
-          HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG, CỔNG THÔNG TIN PHÒNG ĐÀO TẠO
+          AUSTRALIAN INTERNATIONAL SCHOOL, CỔNG THÔNG TIN PHÒNG ĐÀO TẠO
         </title>
         <meta
           name="Description"
-          content="HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG, CỔNG THÔNG TIN PHÒNG ĐÀO TẠO"
+          content="AUSTRALIAN INTERNATIONAL SCHOOL, CỔNG THÔNG TIN PHÒNG ĐÀO TẠO"
         />
         <meta name="theme-color" content="#eb4d4b" />
         <link
@@ -54,7 +54,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           name="description"
-          content="HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG CỔNG THÔNG TIN ĐÀO TẠO"
+          content="AUSTRALIAN INTERNATIONAL SCHOOL CỔNG THÔNG TIN ĐÀO TẠO"
         />
         <meta property="og:image" content={logo} />
         <meta name="og:title" content={siteTitle} />

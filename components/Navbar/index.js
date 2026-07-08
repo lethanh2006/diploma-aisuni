@@ -4,7 +4,7 @@
 import { useRouter } from "next/router";
 import { Button, Col, Drawer, Icon, Menu, Row, Dropdown } from "antd";
 // import { MENU_ITEMS_MOBILE } from 'common/src/data/Hosting/data';
-import LogoImage from "assets/image/hosting/ptit-logo.png";
+import LogoImage from "assets/image/hosting/ais-logo.png";
 import axios from "axios";
 import Box from "components/Box";
 import ScrollSpyMenu from "components/ScrollSpyMenu";
@@ -290,7 +290,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     <header>
       <div
         style={{
-          backgroundColor: "#b9191c",
+          backgroundColor: "#0079C1",
           color: "white",
           padding: "8px 0",
           fontSize: "12px",
@@ -393,7 +393,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               >
                 <div
                   style={{
-                    color: "#b9191c",
+                    color: "#0079C1",
                     fontSize: "clamp(11px, 2.6vw, 14px)",
                     fontWeight: "600",
                     textAlign: "center",
@@ -426,7 +426,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
     <header>
       <div
         style={{
-          backgroundColor: "#b9191c",
+          backgroundColor: "#0079C1",
           color: "white",
           padding: "12px 40px",
           fontSize: "14px",
@@ -536,7 +536,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             >
               <div
                 style={{
-                  color: "#b9191c",
+                  color: "#0079C1",
                   fontSize: "clamp(12px, 2vw, 15px)",
                   fontWeight: "600",
                   marginBottom: "4px",

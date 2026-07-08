@@ -38,7 +38,7 @@ export const DATAINFOR = [
     </ImageWrapper>
     <TitleInformation>3450 SINH VIÊN</TitleInformation>
     <DescriptionInformation>
-      Trong kỳ tuyển sinh năm 2020, Học viện Công nghệ Bưu chính Viễn thông thông báo tuyển sinh
+      Trong kỳ tuyển sinh năm 2020, Australian International School thông báo tuyển sinh
       3450 sinh viên đối với hệ đào tạo đại học chính quy.
     </DescriptionInformation>
   </InformationSV>,
@@ -48,7 +48,7 @@ export const DATAINFOR = [
     </ImageWrapper>
     <TitleInformation>10 NGÀNH ĐÀO TẠO</TitleInformation>
     <DescriptionInformation>
-      Trong kỳ tuyển sinh năm 2020, Học viện Công nghệ Bưu chính Viễn thông tiếp tục tuyển sinh với
+      Trong kỳ tuyển sinh năm 2020, Australian International School tiếp tục tuyển sinh với
       10 nhóm ngành đào tạo đang là xu hướng của cách mạng 4.0.
     </DescriptionInformation>
   </InformationDT>,
@@ -58,8 +58,8 @@ export const DATAINFOR = [
     </ImageWrapper>
     <TitleInformation>96 CHUYÊN NGÀNH</TitleInformation>
     <DescriptionInformation>
-      Với 96 chuyên ngành trong 10 nhóm ngành đào tạo, sinh viên Học viện Công nghệ Bưu chính Viễn
-      thông luôn tự tin hội nhập với cách mạng công nghệ 4.0.
+      Với 96 chuyên ngành trong 10 nhóm ngành đào tạo, sinh viên Australian International School
+      luôn tự tin hội nhập với cách mạng công nghệ 4.0.
     </DescriptionInformation>
   </InformationCN>,
   <InformationHP>

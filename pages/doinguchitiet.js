@@ -47,7 +47,7 @@ const DoiNgu = ({ button, buttonWrapper }) => {
         <Container>
           {/* <TitleContainer style={{ color: '#C13726', marginTop: '50' }}>
 						<p style={{ marginTop: '50', fontSize: '30px', lineHeight: '20px' }}>
-							HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG
+							AUSTRALIAN INTERNATIONAL SCHOOL
 						</p>
 						<p style={{ color: '#1E1E1E', fontSize: '26px' }}>ĐỘI NGŨ CÁN BỘ - PHÒNG ĐÀO TẠO</p>
 					</TitleContainer>
@@ -62,7 +62,7 @@ const DoiNgu = ({ button, buttonWrapper }) => {
                 margin: "0 0 10px",
               }}
             >
-              HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG
+              AUSTRALIAN INTERNATIONAL SCHOOL
             </p>
             <p
               style={{
