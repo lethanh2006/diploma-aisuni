@@ -81,7 +81,8 @@ export default function Layout({ children, home }) {
                 style={{
                   float: "right",
                   margin: 20,
-                  backgroundColor: "#D10000",
+                  backgroundColor: "#0079C1",
+                  borderColor: "#0079C1",
                   borderRadius: "40%",
                 }}
                 onClick={scrollToTop}
